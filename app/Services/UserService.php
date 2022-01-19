@@ -16,26 +16,26 @@ class UserService
 
     public function store(array $data)
     {
-        $this->repo->store($data);
+        return $this->repo->store($data);
     }
 
     public function getList()
     {
-        $this->repo->getList();
+        return $this->repo->getList();
     }
 
     public function show($id)
     {
-        $this->repo->show($id);
+        return $this->repo->show($id);
     }
 
     public function update(array $data, $id)
     {
-        $this->repo->update($data, $id);
+        return $this->repo->update($data, $id);
     }
 
     public function destroy($id)
     {
-        $this->repo->destroy($id);
+        return $this->repo->destroy($id);
     }
 }

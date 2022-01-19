@@ -11,31 +11,31 @@ class UserRepository implements UserRepositoryInterface
 
     public function __construct(User $model)
     {
-        $this->model = $model;
+        return $this->model = $model;
     }
 
     public function store(array $data)
     {
-        $this->model->create($data);
+        return $this->model->create($data);
     }
 
     public function getList()
     {
-        $this->model->get();
+        return $this->model->get();
     }
 
     public function show($id)
     {
-        $this->model->find($id);
+        return $this->model->find($id);
     }
 
     public function update(array $data, $id)
     {
-        $this->model->find($id)->update($data);
+        return $this->model->find($id)->update($data);
     }
 
     public function destroy($id)
     {
-        $this->model->destroy($id);
+        return $this->model->destroy($id);
     }
 }
