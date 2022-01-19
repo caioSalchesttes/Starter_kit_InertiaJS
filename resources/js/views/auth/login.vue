@@ -30,9 +30,15 @@
 </template>
 
 <script>
+import Layout from "./Layout";
 import { Inertia } from '@inertiajs/inertia'
 export default {
-    name: "Home",
+    name: "login",
+    layout: (h, page) => h(Layout, () => child),
+    layout: Layout,
+    components: {
+        Layout,
+    },
     props: {
         errors: Object,
     },

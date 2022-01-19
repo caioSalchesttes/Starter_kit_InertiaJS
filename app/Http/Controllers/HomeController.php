@@ -7,12 +7,6 @@ use Inertia\Inertia;
 
 class HomeController extends Controller
 {
-    public function afterLoginAndRegister()
-    {
-        Inertia::setRootView('layouts/app');
-    return redirect()->to('painel');
-    }
-
     public function index()
     {
         return Inertia::render('home/index');
@@ -20,13 +14,11 @@ class HomeController extends Controller
 
     public function login()
     {
-        Inertia::setRootView('layouts/auth');
         return Inertia::render('auth/login');
     }
 
     public function register()
     {
-        Inertia::setRootView('layouts/auth');
         return Inertia::render('auth/register');
     }
 }
