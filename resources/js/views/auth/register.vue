@@ -69,7 +69,7 @@ export default {
             form:{
                 name: 'Caiossxd',
                 email: 'caiossxdgamer@gmail.com',
-                password: 'caisosxd123s',
+                password: 'Caioss123s',
             }
         }
     },

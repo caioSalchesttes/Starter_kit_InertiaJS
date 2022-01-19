@@ -12,5 +12,6 @@ Route::get('/register', [HomeController::class, 'register'])->name('register');
 
 Route::group(['middleware' => ['auth'], 'prefix' => 'painel'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/afterLoginAndRegister', [HomeController::class, 'afterLoginAndRegister'])->name('afterLoginAndRegister');
 });
 

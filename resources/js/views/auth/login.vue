@@ -4,15 +4,17 @@
         <form class="form-horizontal m-t-30 mt-4" @submit.prevent="submit">
             <div class="mb-3">
                 <label >Email</label>
-                <input type="email" class="form-control" :class="{'is-invalid': errors.email}" placeholder="Email" id="email"  name="email" value="" autofocus>
+                <input type="email" class="form-control" :class="{'is-invalid': errors.email}" placeholder="Email" v-model="form.email" autofocus>
                 <ul v-if="errors.email" class="parsley-errors-list filled"  aria-hidden="false">
                     <li class="parsley-required">{{errors.email}}</li>
                 </ul>
+                {{form.email}}
             </div>
             <div class="mb-3">
                 <a href="" class="text-muted float-end"><small>Esqueceu sua senha?</small></a>
                 <label >Senha</label>
-                <input type="password" class="form-control parsley-error" :class="{'is-invalid': errors.email}" placeholder="Senha" id="password" name="password" autocomplete="current-password">
+                <input type="password" v-model="form.password" class="form-control parsley-error" :class="{'is-invalid': errors.email}" placeholder="Senha">
+            {{form.password}}
             </div>
             <div class="mb-3">
                 <div class="form-check">
@@ -37,8 +39,8 @@ export default {
     data(){
         return{
             form:{
-                email: 'caiossxdgamer@gmail.com',
-                password: 'caisosxd123s',
+                email: null,
+                password: null,
             }
         }
     },

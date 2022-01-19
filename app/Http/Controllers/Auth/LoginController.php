@@ -13,13 +13,7 @@ class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-//    protected $redirectTo = RouteServiceProvider::HOME;
-
-    protected function authenticated(\Illuminate\Http\Request $request, $user)
-    {
-        return Inertia::location('painel');
-
-    }
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     public function __construct()
     {

@@ -7,6 +7,12 @@ use Inertia\Inertia;
 
 class HomeController extends Controller
 {
+    public function afterLoginAndRegister()
+    {
+        Inertia::setRootView('layouts/app');
+    return redirect()->to('painel');
+    }
+
     public function index()
     {
         return Inertia::render('home/index');

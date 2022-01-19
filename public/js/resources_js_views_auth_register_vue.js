@@ -20,7 +20,7 @@ __webpack_require__.r(__webpack_exports__);
       form: {
         name: 'Caiossxd',
         email: 'caiossxdgamer@gmail.com',
-        password: 'caisosxd123s'
+        password: 'Caioss123s'
       }
     };
   },
