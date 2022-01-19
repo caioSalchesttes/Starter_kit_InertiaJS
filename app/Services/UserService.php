@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Services;
-use App\Repositories\Interfaces\UserRepositoryInterface;
+use App\Repositories\UserRepository;
 
 class UserService
 {
     private $repo;
 
-    public function __construct(UserRepositoryInterface $repo)
+    public function __construct(UserRepository $repo)
     {
         $this->repo = $repo;
     }
