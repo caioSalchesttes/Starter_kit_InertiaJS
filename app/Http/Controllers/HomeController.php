@@ -9,19 +9,18 @@ class HomeController extends Controller
 {
     public function index()
     {
-        Inertia::setRootView('app');
         return Inertia::render('home/index');
     }
 
     public function login()
     {
-        Inertia::setRootView('auth');
+        Inertia::setRootView('layouts/auth');
         return Inertia::render('auth/login');
     }
 
     public function register()
     {
-        Inertia::setRootView('auth');
+        Inertia::setRootView('layouts/auth');
         return Inertia::render('auth/register');
     }
 }

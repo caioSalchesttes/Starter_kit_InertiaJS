@@ -7,16 +7,18 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Request;
+use Inertia\Inertia;
 
 class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    protected $redirectTo = RouteServiceProvider::HOME;
+//    protected $redirectTo = RouteServiceProvider::HOME;
 
-    public function authenticate(Request $request)
+    protected function authenticated(\Illuminate\Http\Request $request, $user)
     {
-        return Redirect::route("home");
+        return Inertia::location('painel');
+
     }
 
     public function __construct()
