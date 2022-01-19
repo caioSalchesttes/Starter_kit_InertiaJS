@@ -1,12 +1,11 @@
 <?php
 
 namespace App\Repositories\Interfaces;
-
-use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
 
 interface UserRepositoryInterface
 {
-    public function __construct(User  $model);
+    public function __construct(Model  $model);
     public function store(array $data);
     public function getList();
     public function show($id);
