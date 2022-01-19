@@ -5,10 +5,9 @@
 </template>
 
 <script>
-import Layout from './Layout'
+import Layout from '../Shared/app'
 export default {
     name: "index",
-    layout: (h, page) => h(Layout, () => child),
     layout: Layout,
 }
 </script>

@@ -26144,13 +26144,21 @@ function compileToFunction(template, options) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./auth/Layout": [
-		"./resources/js/views/auth/Layout.vue",
-		"resources_js_views_auth_Layout_vue"
+	"./Shared/app": [
+		"./resources/js/views/Shared/app.vue",
+		"resources_js_views_Shared_app_vue"
 	],
-	"./auth/Layout.vue": [
-		"./resources/js/views/auth/Layout.vue",
-		"resources_js_views_auth_Layout_vue"
+	"./Shared/app.vue": [
+		"./resources/js/views/Shared/app.vue",
+		"resources_js_views_Shared_app_vue"
+	],
+	"./Shared/auth": [
+		"./resources/js/views/Shared/auth.vue",
+		"resources_js_views_Shared_auth_vue"
+	],
+	"./Shared/auth.vue": [
+		"./resources/js/views/Shared/auth.vue",
+		"resources_js_views_Shared_auth_vue"
 	],
 	"./auth/login": [
 		"./resources/js/views/auth/login.vue",
@@ -26175,14 +26183,6 @@ var map = {
 	"./home/": [
 		"./resources/js/views/home/index.vue",
 		"resources_js_views_home_index_vue"
-	],
-	"./home/Layout": [
-		"./resources/js/views/home/Layout.vue",
-		"resources_js_views_home_Layout_vue"
-	],
-	"./home/Layout.vue": [
-		"./resources/js/views/home/Layout.vue",
-		"resources_js_views_home_Layout_vue"
 	],
 	"./home/index": [
 		"./resources/js/views/home/index.vue",
@@ -26329,7 +26329,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\laragon\\\\www\\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_auth_Layout_vue":1,"resources_js_views_auth_login_vue":1,"resources_js_views_auth_register_vue":1,"resources_js_views_home_index_vue":1,"resources_js_views_home_Layout_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Shared_app_vue":1,"resources_js_views_Shared_auth_vue":1,"resources_js_views_auth_login_vue":1,"resources_js_views_auth_register_vue":1,"resources_js_views_home_index_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

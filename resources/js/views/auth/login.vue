@@ -30,11 +30,10 @@
 </template>
 
 <script>
-import Layout from "./Layout";
+import Layout from "../Shared/auth";
 import { Inertia } from '@inertiajs/inertia'
 export default {
     name: "login",
-    layout: (h, page) => h(Layout, () => child),
     layout: Layout,
     components: {
         Layout,
