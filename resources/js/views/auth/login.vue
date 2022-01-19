@@ -68,7 +68,7 @@ export default {
         return{
             form:{
                 email: 'caiossxdgamer@gmail.com',
-                password: 'caisosxd123ss',
+                password: 'caisosxd123s',
             }
         }
     },
