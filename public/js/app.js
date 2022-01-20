@@ -26144,46 +26144,6 @@ function compileToFunction(template, options) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./Shared/app": [
-		"./resources/js/views/Shared/app.vue",
-		"resources_js_views_Shared_app_vue"
-	],
-	"./Shared/app.vue": [
-		"./resources/js/views/Shared/app.vue",
-		"resources_js_views_Shared_app_vue"
-	],
-	"./Shared/auth": [
-		"./resources/js/views/Shared/auth.vue",
-		"resources_js_views_Shared_auth_vue"
-	],
-	"./Shared/auth.vue": [
-		"./resources/js/views/Shared/auth.vue",
-		"resources_js_views_Shared_auth_vue"
-	],
-	"./Shared/footer": [
-		"./resources/js/views/Shared/footer.vue",
-		"resources_js_views_Shared_footer_vue"
-	],
-	"./Shared/footer.vue": [
-		"./resources/js/views/Shared/footer.vue",
-		"resources_js_views_Shared_footer_vue"
-	],
-	"./Shared/navbar": [
-		"./resources/js/views/Shared/navbar.vue",
-		"resources_js_views_Shared_navbar_vue"
-	],
-	"./Shared/navbar.vue": [
-		"./resources/js/views/Shared/navbar.vue",
-		"resources_js_views_Shared_navbar_vue"
-	],
-	"./Shared/topbar": [
-		"./resources/js/views/Shared/topbar.vue",
-		"resources_js_views_Shared_topbar_vue"
-	],
-	"./Shared/topbar.vue": [
-		"./resources/js/views/Shared/topbar.vue",
-		"resources_js_views_Shared_topbar_vue"
-	],
 	"./auth/login": [
 		"./resources/js/views/auth/login.vue",
 		"resources_js_views_auth_login_vue"
@@ -26215,6 +26175,46 @@ var map = {
 	"./home/index.vue": [
 		"./resources/js/views/home/index.vue",
 		"resources_js_views_home_index_vue"
+	],
+	"./shared/app": [
+		"./resources/js/views/shared/app.vue",
+		"resources_js_views_shared_app_vue"
+	],
+	"./shared/app.vue": [
+		"./resources/js/views/shared/app.vue",
+		"resources_js_views_shared_app_vue"
+	],
+	"./shared/auth": [
+		"./resources/js/views/shared/auth.vue",
+		"resources_js_views_shared_auth_vue"
+	],
+	"./shared/auth.vue": [
+		"./resources/js/views/shared/auth.vue",
+		"resources_js_views_shared_auth_vue"
+	],
+	"./shared/footer": [
+		"./resources/js/views/shared/footer.vue",
+		"resources_js_views_shared_footer_vue"
+	],
+	"./shared/footer.vue": [
+		"./resources/js/views/shared/footer.vue",
+		"resources_js_views_shared_footer_vue"
+	],
+	"./shared/navbar": [
+		"./resources/js/views/shared/navbar.vue",
+		"resources_js_views_shared_navbar_vue"
+	],
+	"./shared/navbar.vue": [
+		"./resources/js/views/shared/navbar.vue",
+		"resources_js_views_shared_navbar_vue"
+	],
+	"./shared/topbar": [
+		"./resources/js/views/shared/topbar.vue",
+		"resources_js_views_shared_topbar_vue"
+	],
+	"./shared/topbar.vue": [
+		"./resources/js/views/shared/topbar.vue",
+		"resources_js_views_shared_topbar_vue"
 	]
 };
 function webpackAsyncContext(req) {
@@ -26353,7 +26353,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\laragon\\\\www\\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Shared_app_vue":1,"resources_js_views_Shared_auth_vue":1,"resources_js_views_Shared_footer_vue":1,"resources_js_views_Shared_navbar_vue":1,"resources_js_views_Shared_topbar_vue":1,"resources_js_views_auth_login_vue":1,"resources_js_views_auth_register_vue":1,"resources_js_views_home_index_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_auth_login_vue":1,"resources_js_views_auth_register_vue":1,"resources_js_views_home_index_vue":1,"resources_js_views_shared_app_vue":1,"resources_js_views_shared_auth_vue":1,"resources_js_views_shared_footer_vue":1,"resources_js_views_shared_navbar_vue":1,"resources_js_views_shared_topbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

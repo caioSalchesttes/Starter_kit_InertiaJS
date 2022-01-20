@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Layout from "../Shared/auth";
+import Layout from "../shared/auth";
 import { Inertia } from '@inertiajs/inertia'
 export default {
     name: "login",

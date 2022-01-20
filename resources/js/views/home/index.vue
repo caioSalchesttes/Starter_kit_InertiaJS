@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Layout from '../Shared/app'
+import Layout from '../shared/app'
 export default {
     name: "index",
     layout: Layout,
