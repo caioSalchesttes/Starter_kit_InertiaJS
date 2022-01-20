@@ -8,13 +8,14 @@
                 <ul v-if="errors.email" class="parsley-errors-list filled"  aria-hidden="false">
                     <li class="parsley-required">{{errors.email}}</li>
                 </ul>
-                {{form.email}}
             </div>
             <div class="mb-3">
                 <a href="" class="text-muted float-end"><small>Esqueceu sua senha?</small></a>
                 <label >Senha</label>
-                <input type="password" v-model="form.password" class="form-control parsley-error" :class="{'is-invalid': errors.email}" placeholder="Senha">
-            {{form.password}}
+                <input type="password" v-model="form.password"  class="form-control" :class="{'is-invalid': errors.password}" placeholder="Senha">
+                <ul v-if="errors.password" class="parsley-errors-list filled"  aria-hidden="false">
+                    <li class="parsley-required">{{errors.password}}</li>
+                </ul>
             </div>
             <div class="mb-3">
                 <div class="form-check">

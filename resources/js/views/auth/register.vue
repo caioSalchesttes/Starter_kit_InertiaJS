@@ -1,75 +1,62 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <form method="POST" @submit.prevent="submit">
-                            <div class="row mb-3">
-                                <label for="email" class="col-md-4 col-form-label text-md-end"></label>
-                                <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control" name="email" value="" autocomplete="email" autofocus>
-
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong></strong>
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="row mb-3">
-                                <label for="password" class="col-md-4 col-form-label text-md-end"></label>
-
-                                <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control" name="password" autocomplete="current-password">
-
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong></strong>
-                                    </span>
-
-                                </div>
-                            </div>
-
-                            <div class="row mb-3">
-                                <div class="col-md-6 offset-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember">
-
-                                        <label class="form-check-label" for="remember">
-
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        Logar
-                                    </button>
-
-                                    <a class="btn btn-link" href="">
-                                    </a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <div>
+        <h4 class="mt-0">ENTRAR</h4>
+        <form class="form-horizontal m-t-30 mt-4" @submit.prevent="submit">
+            <div class="mb-3">
+                <label >Nome</label>
+                <input type="email" class="form-control" :class="{'is-invalid': errors.name}" placeholder="Email" v-model="form.name" autofocus>
+                <ul v-if="errors.name" class="parsley-errors-list filled"  aria-hidden="false">
+                    <li class="parsley-required">{{errors.name}}</li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <label >Email</label>
+                <input type="email" class="form-control" :class="{'is-invalid': errors.email}" placeholder="Email" v-model="form.email" autofocus>
+                <ul v-if="errors.email" class="parsley-errors-list filled"  aria-hidden="false">
+                    <li class="parsley-required">{{errors.email}}</li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <a href="" class="text-muted float-end"><small>Esqueceu sua senha?</small></a>
+                <label >Senha</label>
+                <input type="password" v-model="form.password"  class="form-control" :class="{'is-invalid': errors.password}" placeholder="Senha">
+                <ul v-if="errors.password" class="parsley-errors-list filled"  aria-hidden="false">
+                    <li class="parsley-required">{{errors.password}}</li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox-signin">
+                    <label class="form-check-label" for="checkbox-signin">Lembre de mim</label>
                 </div>
             </div>
-        </div>
+            <div class="d-grid mb-0 text-center">
+                <button class="btn btn-primary" type="submit"><i class="mdi mdi-login"></i> Entrar </button>
+            </div>
+        </form>
     </div>
 </template>
 
 <script>
+import { Link } from '@inertiajs/inertia-vue3'
+import Layout from "../Shared/auth";
 import {Inertia} from "@inertiajs/inertia";
 export default {
     name: "register",
+    layout: Layout,
+    components: {
+        Layout,
+        Link
+    },
+    props: {
+        errors: Object,
+    },
     data(){
         return{
             form:{
-                name: 'Caiossxd',
-                email: 'caiossxdgamer@gmail.com',
-                password: 'Caioss123s',
+                name: null,
+                email: null,
+                password: null,
             }
         }
     },

@@ -7,10 +7,10 @@
                         <div class="container-fluid">
                             <a href="" class="topnav-logo">
                                 <span class="topnav-logo-lg">
-                                    <img src="" alt="" height="16">
+                                    <img src="assets/images/logo-light.png" alt="" height="16">
                                 </span>
                                 <span class="topnav-logo-sm">
-                                    <img src="" alt="" height="16">
+                                    <img src="assets/images/logo_sm_dark.png" alt="" height="16">
                                 </span>
                             </a>
 
@@ -46,7 +46,7 @@
 
                                         <div style="max-height: 230px;" data-simplebar>
                                             <!-- item-->
-                                            <a href="" class="dropdown-item notify-item">
+                                            <a href="assets/images/users/avatar-2.jpg" class="dropdown-item notify-item">
                                                 <div class="notify-icon bg-primary">
                                                     <i class="mdi mdi-comment-account-outline"></i>
                                                 </div>
@@ -56,7 +56,7 @@
                                             </a>
 
                                             <!-- item-->
-                                            <a href="" class="dropdown-item notify-item">
+                                            <a href="assets/images/users/avatar-4.jpg" class="dropdown-item notify-item">
                                                 <div class="notify-icon bg-info">
                                                     <i class="mdi mdi-account-plus"></i>
                                                 </div>
@@ -66,7 +66,7 @@
                                             </a>
 
                                             <!-- item-->
-                                            <a href="" class="dropdown-item notify-item">
+                                            <a href="assets/images/users/avatar-4.jpg" class="dropdown-item notify-item">
                                                 <div class="notify-icon">
                                                     <img src="" class="img-fluid rounded-circle" alt="" /> </div>
                                                 <p class="notify-details">Cristina Pride</p>
@@ -76,7 +76,7 @@
                                             </a>
 
                                             <!-- item-->
-                                            <a href="" class="dropdown-item notify-item">
+                                            <a href="assets/images/users/avatar-4.jpg" class="dropdown-item notify-item">
                                                 <div class="notify-icon bg-primary">
                                                     <i class="mdi mdi-comment-account-outline"></i>
                                                 </div>
@@ -86,7 +86,7 @@
                                             </a>
 
                                             <!-- item-->
-                                            <a href="" class="dropdown-item notify-item">
+                                            <a href="assets/images/users/avatar-4.jpg" class="dropdown-item notify-item">
                                                 <div class="notify-icon">
                                                     <img src="" class="img-fluid rounded-circle" alt="" /> </div>
                                                 <p class="notify-details">Karen Robinson</p>
@@ -96,7 +96,7 @@
                                             </a>
 
                                             <!-- item-->
-                                            <a href="" class="dropdown-item notify-item">
+                                            <a href="assets/images/users/avatar-4.jpg" class="dropdown-item notify-item">
                                                 <div class="notify-icon bg-info">
                                                     <i class="mdi mdi-heart"></i>
                                                 </div>
@@ -175,10 +175,10 @@
                                     <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" id="topbar-userdrop" href="#" role="button" aria-haspopup="true"
                                        aria-expanded="false">
                                         <span class="account-user-avatar">
-                                            <img src="" alt="user-image" class="rounded-circle">
+                                            <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
                                         </span>
                                         <span>
-                                            <span class="account-user-name"></span>
+                                            <span class="account-user-name">Caiossxd</span>
                                             <span class="account-position">Usuário</span>
                                         </span>
                                     </a>
