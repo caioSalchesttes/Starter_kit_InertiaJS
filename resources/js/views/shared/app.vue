@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import { Link } from '@inertiajs/inertia-vue3'
 import Navbar from "./navbar";
 import Topbar from "./topbar";
 import Footer from "./footer";
@@ -26,7 +25,6 @@ export default {
         Topbar,
         Navbar,
         Footer,
-        Link,
     }
 }
 </script>

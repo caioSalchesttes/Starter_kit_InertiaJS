@@ -38,7 +38,6 @@
 </template>
 
 <script>
-import { Link } from '@inertiajs/inertia-vue3'
 import Layout from "../shared/auth";
 import {Inertia} from "@inertiajs/inertia";
 export default {
