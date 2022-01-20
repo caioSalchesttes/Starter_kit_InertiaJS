@@ -26160,6 +26160,30 @@ var map = {
 		"./resources/js/views/Shared/auth.vue",
 		"resources_js_views_Shared_auth_vue"
 	],
+	"./Shared/footer": [
+		"./resources/js/views/Shared/footer.vue",
+		"resources_js_views_Shared_footer_vue"
+	],
+	"./Shared/footer.vue": [
+		"./resources/js/views/Shared/footer.vue",
+		"resources_js_views_Shared_footer_vue"
+	],
+	"./Shared/navbar": [
+		"./resources/js/views/Shared/navbar.vue",
+		"resources_js_views_Shared_navbar_vue"
+	],
+	"./Shared/navbar.vue": [
+		"./resources/js/views/Shared/navbar.vue",
+		"resources_js_views_Shared_navbar_vue"
+	],
+	"./Shared/topbar": [
+		"./resources/js/views/Shared/topbar.vue",
+		"resources_js_views_Shared_topbar_vue"
+	],
+	"./Shared/topbar.vue": [
+		"./resources/js/views/Shared/topbar.vue",
+		"resources_js_views_Shared_topbar_vue"
+	],
 	"./auth/login": [
 		"./resources/js/views/auth/login.vue",
 		"resources_js_views_auth_login_vue"
@@ -26329,7 +26353,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\laragon\\\\www\\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Shared_app_vue":1,"resources_js_views_Shared_auth_vue":1,"resources_js_views_auth_login_vue":1,"resources_js_views_auth_register_vue":1,"resources_js_views_home_index_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Shared_app_vue":1,"resources_js_views_Shared_auth_vue":1,"resources_js_views_Shared_footer_vue":1,"resources_js_views_Shared_navbar_vue":1,"resources_js_views_Shared_topbar_vue":1,"resources_js_views_auth_login_vue":1,"resources_js_views_auth_register_vue":1,"resources_js_views_home_index_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
